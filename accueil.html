@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="accueil.css">
+    <link rel="icon" href="assets/logo/Booki_logo.jpeg" type="image/icon type">
+    <title>Booki</title>
+</head>
+
+<body>
+    <header>
+        <img src="assets/logo/Booki.png" alt="logo booki">
+        <div class="navbar">
+            <a href="#">Hébergements</a>
+            <a href="#">Activités</a>
+        </div>
+    </header>
+    <main>
+        <div class="container_search">
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <h2>En plein centre-ville ou en pleine nature</h2>
+            <div class="searchbar">
+                <form action="">
+                    <input type="image" class="searchbar_icone_location"
+                        src="https://api.iconify.design/ic:round-location-on.svg" alt="logo localisation">
+                    <input type="text" class="searchbar_text" name="">
+                    <input type="button" class="searchbar_button_search" value="Rechercher">
+                </form>
+            </div>
+            <div class="filter">
+                <p>Filtres</p>
+                <div class="button_economic">
+                    <a href="#">
+                        <img src="assets/icons/money.svg" alt="icone de billet">
+                        <p>Économique</p>
+                    </a>
+                </div>
+                <div class="button_familial">
+                    <a href="#">
+                        <img src="assets/icons/boy.svg" alt="icone de personnage">
+                        <p>Familial</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="assets/icons/love.svg" alt="icone de coeur">
+                        <p>Romantique</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="assets/icons/dog.svg" alt="icone de chien">
+                        <p>Animaux autorisés</p>
+                    </a>
+                </div>
+            </div>
+            <div class="information">
+                <input type="image" class="information_icone" src="assets/icons/information.svg" alt="i">
+                <p>Plus de <pan id="nb_logement">500</pan> logements sont disponibles dans cette ville</p>
+            </div>
+            <div class="container_accommodation">
+                <h2>Hébergements à <span id="city_accommodation">Marseille</span></h2>
+                <div class="places_of_accommodation">
+                    <img src="assets/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                        alt="photo de chambre">
+                    <h3>Auberge La Canebière</h3>
+                    <p>Nuit à partir de 25€</p>
+                    <div class="component_stars">
+                        <input type="image" class="star" src="assets/icons/blue_star.svg" alt="étoile bleu">
+                        <input type="image" class="star" src="assets/icons/blue_star.svg" alt="étoile bleu">
+                        <input type="image" class="star" src="assets/icons/blue_star.svg" alt="étoile bleu">
+                        <input type="image" class="star" src="assets/icons/blue_star.svg" alt="étoile bleu">
+                        <input type="image" class="star" src="assets/icons/grey_star.svg" alt="étoile grise">
+                    </div>
+                </div>
+                <div class="places_of_accommodation">
+                    <img src="assets/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                        alt="photo de chambre">
+                    <h3>Hôtel du port</h3>
+                    <p>Nuit à partir de <span id="price_hotel">52€</span></p>
+                    <div class="component_stars">
+                        <input type="image" class="star" src="assets/icons/blue_star.svg" alt="étoile bleu">
+                        <input type="image" class="star" src="assets/icons/blue_star.svg" alt="étoile bleu">
+                        <input type="image" class="star" src="assets/icons/blue_star.svg" alt="étoile bleu">
+                        <input type="image" class="star" src="assets/icons/blue_star.svg" alt="étoile bleu">
+                        <input type="image" class="star" src="assets/icons/grey_star.svg" alt="étoile grise">
+                    </div>
+                </div>
+                <p><span id="open_more">Afficher plus</span></p>
+            </div>
+            <div class="most_popular">
+                <h2>Les plus populaires</h2>
+                <input type="image" class="" src="assets/icons/graphic.svg" alt="icone de graphique">
+                <div class="places_of_accommodation">
+                    <img src="assets/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                        alt="photo de chambre">
+                    <h3>Hôtel du port</h3>
+                    <p>Nuit à partir de <span id="price_hotel">52€</span></p>
+                    <div class="component_stars">
+                        <input type="image" class="star" src="assets/icons/blue_star.svg" alt="étoile bleu">
+                        <input type="image" class="star" src="assets/icons/blue_star.svg" alt="étoile bleu">
+                        <input type="image" class="star" src="assets/icons/blue_star.svg" alt="étoile bleu">
+                        <input type="image" class="star" src="assets/icons/blue_star.svg" alt="étoile bleu">
+                        <input type="image" class="star" src="assets/icons/grey_star.svg" alt="étoile grise">
+                    </div>
+                </div>
+            </div>
+            <div class="activity_container">
+                <h2>Activités à Marseille</h2>
+                <div>
+                    <img src="assets/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieux-Port">
+                    <p>Vieux-Port</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="about">
+            <h3>À propos</h3>
+            <a href="#">Fonctionnement du site</a>
+            <a href="#">Condition générales</a>
+            <a href="#">Données et confidentialité</a>
+        </div>
+        <div class="our_accomodation">
+            <h3>Nos hébergements</h3>
+            <a href="#">Charte qualité</a>
+            <a href="#">Proposer votre hôtel</a>
+        </div>
+        <div class="assistance">
+            <h3>Assistance</h3>
+            <a href="#">Centre d'aide</a>
+            <a href="#">Nous contacter</a>
+        </div>
+    </footer>
+</body>
+
+</html>
