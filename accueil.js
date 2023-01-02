@@ -40,16 +40,14 @@ let hotelLeSoleilDuMatin = {
     price_hotel : "128€"
 }
 
-let  = {
+let chambredHotelAuCoeurDeLeau = {
     imgSrc : "assets/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg",
     title : "Chambres d’hôtes Au cœur de l’eau",
     price_hotel : "71€"
 }
 
-let  = {
+let hotelBleuEtBlanc = {
     imgSrc : "assets/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg",
     title : "Hôtel Bleu et Blanc",
     price_hotel : "68€"
 }
-
-// console.log(aubergeLaCanebiere.imgSrc);
