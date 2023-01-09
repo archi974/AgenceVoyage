@@ -56,10 +56,15 @@ h2 {
         flex-direction: column;
         align-content: center;
         flex-wrap: wrap;
+        width: auto !important;
     }
 }
 
 /* HEADER */
+
+body {
+    width: max-content;
+}
 
 .header {
     display: flex;
@@ -95,7 +100,6 @@ a:focus {
 .main {
     max-width: 1400px;
 }
-
 
 /* ---
     Searchbar
