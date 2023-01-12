@@ -1,4 +1,8 @@
-/* GLOBAL */
+/*
+---------------------
+        GLOBAL
+---------------------
+*/
 
 :root {
     --blue-color: #0065FC;
@@ -19,6 +23,10 @@ h1 {
 }
 
 h2 {
+    font-size: 18px;
+}
+
+h3 {
     font-size: 16px;
 }
 
@@ -50,63 +58,89 @@ h2 {
 -------- DESKTOP --------
 ------------------------ */
 
-@media only screen and (min-width: 1401px) {
-    body {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        flex-wrap: wrap;
-        width: auto !important;
-    }
-}
-
-/* HEADER */
-
 body {
-    width: max-content;
+    margin: 0 auto;
+    max-width: 1340px;
+    width: 100%;
 }
+
+/*
+---------------------
+        HEADER
+---------------------
+*/
 
 .header {
     display: flex;
     justify-content: space-between;
-    margin: 55px;
-    max-width: 1400px;
+    margin: 0 0 63px 7px;
 }
 
-.header .navbar {
+.navbar {
     display: flex;
 }
 
 .header img {
     height: 19px;
+    margin-top: 44px;
+}
+
+.navbar .nav_link {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav_link li {
+    padding-top: 48px;
+    width: 162px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav_link li:last-child {
+    margin-right: 0;
+}
+
+.nav_link li:hover,
+.nav_link li:focus {
+    color: var(--blue-color);
+    border-top: 2px solid blue;
+    padding-top: 46px;
 }
 
 .header a {
-    margin-left: 67px;
     text-decoration: none;
     color: #000;
 }
 
-.header a:hover,
-a:focus {
+
+.navbar a:hover,
+.navbar a:focus {
     color: var(--blue-color);
-    text-decoration: underline;
-    text-underline-offset: -70px;
-    text-decoration-thickness: 2px;
 }
 
-/* MAIN */
+/*
+---------------------
+        MAIN
+---------------------
+*/
 
 .main {
     max-width: 1400px;
 }
 
 /* ---
-    Searchbar
+    Searchbar Filter Information
     --- */
 
-.container_search {
-    margin: 39px 55px;
+.container_search_filter_information {
+    margin-bottom: 39px;
+}
+
+/* Searchbar */
+
+.searchbar {
+    margin: 0 0 46px 5px;
 }
 
 .searchbar h1 {
@@ -163,12 +197,10 @@ form {
     display: none;
 }
 
-/* ---
-    Filter
-    --- */
+/* Filter */
 
 .filter {
-    margin: 46px 0;
+    margin: 0 0 46px 12px;
     display: flex;
     align-items: center;
 }
@@ -207,13 +239,12 @@ form {
     padding-left: 0.5rem;
 }
 
-/* ---
-    Information
-    --- */
+/* Information */
 
 .information {
     display: flex;
     align-items: center;
+    margin-left: 9px;
 }
 
 .information img {
@@ -234,16 +265,18 @@ form {
 
 .container_accomodation_most_popular {
     display: flex;
-    margin: 0 50px;
+    margin-bottom: 60px;
 }
 
-/* accomodation */
+/* Accomodation */
+
+/* nth-child */
 
 #container_accommodation {
     margin-right: 40px;
     padding: 42px 40px 46px 40px;
     border-radius: 20px;
-    background-color: #EEEEEE;
+    background-color: var(--grey-color);
     width: 880px;
     height: 626px
 }
@@ -302,13 +335,14 @@ form {
     color: #000;
 }
 
-/* most popular */
+/* Most popular */
+
+/* first child / Last child */
 
 .most_popular {
     background-color: #EEEEEE;
     border-radius: 20px;
     padding: 41px 40px 1px 37px;
-    ;
     width: 420px;
 }
 
@@ -339,6 +373,7 @@ form {
     border-radius: 20px 0 0 20px;
     border: 4px solid #fff
 }
+/* flex align content */
 
 .text_most_popular {
     padding: 16px 22px 12px 15px;
@@ -354,20 +389,17 @@ form {
     margin-bottom: 44px;
 }
 
-/* activity */
+/* ----
+    Activity
+    ---- */
 
 #container_activity {
-    margin: 60px 10px 61px 50px;
-    border-radius: 20px;
-    width: 880px;
-    height: auto;
+    margin-bottom: 60px;
 }
 
 .container_card_of_activity {
     display: flex;
-    flex-wrap: wrap;
-    width: max-content;
-    max-width: 1400px;
+    flex-wrap: nowrap;
 }
 
 .card_of_activity {
@@ -375,8 +407,12 @@ form {
     padding-bottom: 20px;
     margin-right: 43px;
     margin-top: 19px;
-    width: 21.5%;
+    width: 100%;
     box-shadow: 5px 5px 10px 0px var(--darkgrey-color);
+}
+
+.card_of_activity:last-child {
+    margin-right: 0;
 }
 
 .card_of_activity a {
@@ -391,17 +427,20 @@ form {
     border-radius: 20px 20px 0px 0px;
 }
 
-.card_of_activity p {
+.card_of_activity h3 {
     margin-left: 19px
 }
 
-/* FOOTER */
+/*
+---------------------
+        FOOTER
+---------------------
+*/
 
 .footer {
     max-width: 1400px;
     display: flex;
-    background-color: var(--darkgrey-color);
-    margin: 0 53px 0 48px;
+    background-color: var(--grey-color);
     padding-left: 70px;
     height: 225px;
 }
@@ -427,8 +466,108 @@ form {
 -------- TABLETTE --------
 ------------------------ */
 @media only screen and (max-width: 991px) {
+
+    /*
+    ---------------------
+            HEADER
+    ---------------------
+    */
+
+    body {
+        max-width: 991px;
+    }
+
+    .header {
+        margin: 44px 72px;
+    }
+
+    /*
+    ---------------------
+            MAIN
+    ---------------------
+    */
+
+    /* ---
+    Searchbar Filter Information
+    --- */
+
+    .container_search_filter_information {
+        margin: 39px 72px;
+    }
+
+    /* Searchbar */
+
     #searchImage {
         display: none;
+    }
+
+    /* Filter */
+
+    /* Information */
+
+    /* ----
+    Accomodation and most popular
+    ---- */
+
+    /* Accomodation */
+
+    /* Most popular */
+
+    .container_accomodation_most_popular {
+        flex-direction: column;
+        margin: 0 72px;
+    }
+
+    #container_accommodation {
+        width: 100%;
+    }
+
+    .most_popular {
+        margin-top: 53px;
+        width: 100%;
+    }
+
+    .all_cards_places_of_most_popular {
+        display: flex;
+    }
+
+    /* ----
+    Activity
+    ---- */
+
+    #container_activity {
+        margin: 70px 30px 69px 73px;
+    }
+
+    .container_card_of_activity {
+        max-width: 991px;
+    }
+
+    .card_of_activity {
+        height: 267px;
+        width: 18%;
+    }
+
+    .card_of_activity img {
+        height: 211px;
+    }
+
+    /* .card_of_activity h3 {
+
+    } */
+    
+    /*
+    ---------------------
+            FOOTER
+    ---------------------
+    */
+    
+    .footer {
+        margin: 0 70px 0 73px;
+    }
+
+    .footer_components {
+        margin-right: 81px;
     }
 }
 
@@ -436,8 +575,15 @@ form {
 -------- MOBILE --------
 ------------------------ */
 
+/* belle présentation 320px mini */
+
 @media only screen and (max-width: 767px) {
-    /* HEADER */
+
+    /*
+    ---------------------
+            HEADER
+    ---------------------
+    */
 
     header {
         margin: 2rem 0rem;
@@ -487,26 +633,36 @@ form {
         color: var(--blue-color)
     }
 
-    /* MAIN */
+    /* padding-top */
+    /* active */
+    /*  */
+
+    /*
+    ---------------------
+            MAIN
+    ---------------------
+    */
 
     /* ---
-        Searchbar
+    Searchbar Filter Information
     --- */
 
-    .container_search {
+    .container_search_filter_information {
         display: flex;
         flex-direction: column;
         margin: 2rem;
     }
 
-    .container_search h1 {
+    .container_search_filter_information h1 {
         margin: 2rem 0rem;
         font-size: 2.75rem;
     }
 
-    .container_search p {
+    .container_search_filter_information p {
         font-size: 1.5rem;
     }
+
+    /* Searchbar */
 
     form {
         display: flex;
@@ -562,9 +718,7 @@ form {
         display: flex;
     }
 
-    /* ---
-    Filter
-    --- */
+    /* Filter */
 
     .filter {
         display: flex;
@@ -616,7 +770,7 @@ form {
         padding-left: 0.5rem;
     }
 
-    /* information */
+    /* Information */
 
     .information {
         display: flex;
@@ -630,12 +784,16 @@ form {
         margin-right: 0.75rem;
     }
 
-    /* most popular & accomodation */
+    /* ----
+    Accomodation and most popular
+    ---- */
 
     .container_accomodation_most_popular {
         padding: 2rem;
         background-color: var(--grey-color);
     }
+
+    /* Most popular */
 
     .title_most_popular {
         display: flex;
@@ -660,5 +818,17 @@ form {
         border-radius: 20px 0px 0px 20px;
         margin-right: 1rem;
     }
+
+    /* Accomodation */
+
+    /* ----
+    Activity
+    ---- */
+
+    /*
+    ---------------------
+            FOOTER
+    ---------------------
+    */
 
 }
