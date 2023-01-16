@@ -33,6 +33,10 @@ h3 {
 
 /* component star */
 
+.component_stars {
+    height: 12px;
+}
+
 .star:hover~.star,
 .star:active~.star,
 .star:focus~.star {
@@ -154,14 +158,16 @@ body {
 form {
     display: flex;
     align-items: stretch;
+    width: 100%;
+    height: 49px;
 }
 
 .searchbar_icone_location {
-
     background-color: var(--grey-color);
-    padding: 0.5rem;
-    border-radius: 10px 0 0 10px;
-
+    padding: 16px 18px 15px 18px;
+    border-radius: 15px 0 0 15px;
+    width: 54px;
+    height: 49px;
 }
 
 .searchbar_icone_location:hover {
@@ -173,6 +179,10 @@ form {
     border-left: 1px solid var(--grey-color);
     border-bottom: 1px solid var(--grey-color);
     border-right: none;
+    padding: 0 17px;
+    font-weight: bold;
+    font-size: 18px;
+    width: 236px;
 }
 
 .searchbar_text:focus {
@@ -184,8 +194,9 @@ form {
     border: none;
     background-color: var(--blue-color);
     color: #fff;
-    border-radius: 0 10px 10px 0;
-    padding: 0 0.75rem;
+    border-radius: 0 15px 15px 0;
+    padding: 0 14px;
+    font-size: 18px;
 }
 
 .searchbar_button_search:hover {
@@ -248,11 +259,11 @@ form {
 }
 
 .information img {
-    border: 0.1rem solid var(--darkgrey-color);
+    border: 1px solid var(--darkgrey-color);
     border-radius: 50%;
     padding: 5px;
     margin-right: 11px;
-    height: 25px;
+    height: 24px;
 }
 
 .information img:hover {
@@ -268,37 +279,43 @@ form {
     margin-bottom: 60px;
 }
 
-/* Accomodation */
+.container_accomodation_most_popular p {
+    font-size: 14px;
+}
 
-/* nth-child */
+/* Accomodation */
 
 #container_accommodation {
     margin-right: 40px;
-    padding: 42px 40px 46px 40px;
+    padding: 40px;
     border-radius: 20px;
     background-color: var(--grey-color);
     width: 880px;
     height: 626px
 }
 
+#container_accommodation h1 {
+    height: 26px;
+    margin: 2px 0 23px 0;
+}
+
 .container_places_of_accommodation {
     display: flex;
     flex-direction: row;
-    margin-bottom: 7px;
-    margin-top: 23px;
-}
-
-.open_more_container {
-    margin-top: 33px;
+    flex-wrap: wrap;
 }
 
 .card_places_of_accomodation {
     background-color: #FFF;
     width: 246px;
     height: 199px;
-    margin-right: 31px;
+    margin: 0 31px 30px 0;
     border-radius: 20px;
     box-shadow: 5px 5px 10px 0px var(--darkgrey-color);
+}
+
+.card_places_of_accomodation:nth-child(3n) {
+    margin-right: 0;
 }
 
 .card_places_of_accomodation a {
@@ -310,24 +327,31 @@ form {
     width: 100%;
     height: 124px;
     border-radius: 20px 20px 0 0;
-    border: 4px solid #fff;
+    border: 5px solid #fff;
 }
 
 .card_places_of_accomodation .text_accommodation {
-    padding-left: 1rem;
+    padding-left: 16px;
+}
+
+.text_accommodation {
+    height: 71px;
 }
 
 .text_accommodation h3,
 .text_accommodation p {
-    margin-bottom: 4px;
+    margin-bottom: 9px;
+    height: 15px;
 }
 
-.text_accommodation p {
-    font-size: 14px;
+.text_accommodation .component_stars {
+    margin-bottom: 11px;
 }
 
-.text_most_popular .component_stars {
-    margin-top: 9px;
+.open_more_container {
+    height: 21px;
+    font-size: 18px;
+    margin-top: 10px 0 6px 4px;
 }
 
 #open_more {
