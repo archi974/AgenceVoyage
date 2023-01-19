@@ -308,10 +308,14 @@ form {
 .card_places_of_accomodation {
     background-color: #FFF;
     width: 30.75%;
-    height: 199px;
     margin: 0 auto 30px 0;
     border-radius: 20px;
-    box-shadow: 5px 5px 10px 0px var(--darkgrey-color);
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1))
+}
+
+.card_places_of_accomodation:hover {
+    transition: transform .2s;
+    transform: scale(1.05);
 }
 
 .card_places_of_accomodation:nth-child(3n) {
@@ -328,28 +332,16 @@ form {
     height: 124px;
     border-radius: 20px 20px 0 0;
     border: 5px solid #fff;
+    display: flex;
 }
 
 .card_places_of_accomodation .text_accommodation {
-    padding-left: 16px;
-}
-
-.text_accommodation {
-    height: 71px;
+    padding: 0 16px 11px 16px;
 }
 
 .text_accommodation h3,
 .text_accommodation p {
-    margin-bottom: 9px;
-}
-
-@media only screen and (max-width: 1066px) and (min-width: 992px) {
-    .text_accommodation h3 {
-        font-size: 14px;
-    }
-    .text_accommodation p {
-        font-size: 12px;
-    }
+    margin-bottom: 8.5px;
 }
 
 .open_more_container {
@@ -387,11 +379,16 @@ form {
     border-radius: 20px;
     height: 144px;
     margin-bottom: 33px;
-    box-shadow: 5px 5px 10px 0px var(--darkgrey-color);
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1))
+}
+
+.card_places_of_most_popular:hover {
+    transition: transform .2s;
+    transform: scale(1.05);
 }
 
 .card_places_of_most_popular:last-child {
-    margin-bottom: 34px;
+    margin-bottom: 0px;
 }
 
 .card_places_of_most_popular a {
@@ -443,7 +440,12 @@ form {
     margin-right: 43px;
     margin-top: 19px;
     width: 100%;
-    box-shadow: 5px 5px 10px 0px var(--darkgrey-color);
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1)
+}
+
+.card_of_activity:hover {
+    transition: transform .2s;
+    transform: scale(1.05);
 }
 
 .card_of_activity:last-child {
@@ -481,21 +483,22 @@ form {
     height: 225px;
 }
 
-.footer h2 {
-    margin-bottom: 20px;
-}
-
-.footer a {
-    text-decoration: none;
-    color: #000;
-    margin-bottom: 12px;
-}
-
 .footer_components {
+    list-style: none;
     display: flex;
     flex-direction: column;
     margin-top: 45px;
     width: 100%;
+}
+
+.footer_components h2 {
+    margin-bottom: 20px;
+}
+
+.footer_components a {
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 12px;
 }
 
 /* ---------------------
@@ -601,10 +604,6 @@ form {
         height: 211px;
         margin-bottom: 5px;
     }
-}
-
-@media only screen and (max-width: 850px) {
-
 }
 
 /* ---------------------
