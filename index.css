@@ -224,7 +224,7 @@ form {
 
 .filter .filter_button {
     margin-left: 42px;
-    border: 0.1rem solid var(--darkgrey-color);
+    border: 2px solid var(--darkgrey-color);
     border-radius: 25px;
     padding: 10px;
 }
@@ -247,7 +247,7 @@ form {
 }
 
 .filter a p {
-    padding-left: 0.5rem;
+    padding-left: 10px;
 }
 
 /* Information */
@@ -291,7 +291,7 @@ form {
     border-radius: 20px;
     background-color: var(--grey-color);
     width: 880px;
-    height: 626px
+    height: 625px
 }
 
 #container_accommodation h1 {
@@ -307,9 +307,9 @@ form {
 
 .card_places_of_accomodation {
     background-color: #FFF;
-    width: 246px;
+    width: 30.75%;
     height: 199px;
-    margin: 0 31px 30px 0;
+    margin: 0 auto 30px 0;
     border-radius: 20px;
     box-shadow: 5px 5px 10px 0px var(--darkgrey-color);
 }
@@ -341,17 +341,21 @@ form {
 .text_accommodation h3,
 .text_accommodation p {
     margin-bottom: 9px;
-    height: 15px;
 }
 
-.text_accommodation .component_stars {
-    margin-bottom: 11px;
+@media only screen and (max-width: 1066px) and (min-width: 992px) {
+    .text_accommodation h3 {
+        font-size: 14px;
+    }
+    .text_accommodation p {
+        font-size: 12px;
+    }
 }
 
 .open_more_container {
     height: 21px;
     font-size: 18px;
-    margin-top: 10px 0 6px 4px;
+    margin: 10px 0 5px 4px;
 }
 
 #open_more {
@@ -361,19 +365,20 @@ form {
 
 /* Most popular */
 
-/* first child / Last child */
-
 .most_popular {
     background-color: #EEEEEE;
     border-radius: 20px;
-    padding: 41px 40px 1px 37px;
+    padding: 34px 40px 34px 37px;
     width: 420px;
+    height: 625px;
 }
 
 .title_most_popular {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 7px 0 26px 0;
+    height: 26px;
 }
 
 .card_places_of_most_popular {
@@ -381,36 +386,42 @@ form {
     background-color: #FFF;
     border-radius: 20px;
     height: 144px;
-    margin: 33px 0;
+    margin-bottom: 33px;
     box-shadow: 5px 5px 10px 0px var(--darkgrey-color);
+}
+
+.card_places_of_most_popular:last-child {
+    margin-bottom: 34px;
 }
 
 .card_places_of_most_popular a {
     display: flex;
-    width: 100%;
     text-decoration: none;
     color: #000;
 }
 
 .card_places_of_most_popular img {
-    width: 39%;
+    width: 137px;
     border-radius: 20px 0 0 20px;
-    border: 4px solid #fff
+    border: 5px solid #fff;
+    height: 144px;
+    margin-right: 15px;
+    object-fit: cover;
 }
-/* flex align content */
 
 .text_most_popular {
-    padding: 16px 22px 12px 15px;
+    margin: 16px 22px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .text_most_popular h3 {
-    font-size: 16px;
     margin-bottom: 7px;
 }
 
-.text_most_popular p {
-    font-size: 14px;
-    margin-bottom: 44px;
+.text_most_popular .component_stars {
+    margin-bottom: 12px;
 }
 
 /* ----
@@ -445,14 +456,15 @@ form {
 }
 
 .card_of_activity img {
-    height: 394px;
+    height: 78.5%;
     width: 100%;
-    margin-bottom: 21px;
+    margin-bottom: 20px;
     border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
 }
 
 .card_of_activity h3 {
-    margin-left: 19px
+    margin: 0 19px
 }
 
 /*
@@ -469,21 +481,21 @@ form {
     height: 225px;
 }
 
-.footer h3 {
-    padding-bottom: 20px;
+.footer h2 {
+    margin-bottom: 20px;
 }
 
 .footer a {
     text-decoration: none;
     color: #000;
-    padding-bottom: 12px;
+    margin-bottom: 12px;
 }
 
 .footer_components {
     display: flex;
     flex-direction: column;
-    margin-right: 230px;
     margin-top: 45px;
+    width: 100%;
 }
 
 /* ---------------------
@@ -498,11 +510,7 @@ form {
     */
 
     body {
-        max-width: 991px;
-    }
-
-    .header {
-        margin: 44px 72px;
+        max-width: 880px;
     }
 
     /*
@@ -511,48 +519,69 @@ form {
     ---------------------
     */
 
-    /* ---
-    Searchbar Filter Information
-    --- */
-
-    .container_search_filter_information {
-        margin: 39px 72px;
-    }
-
     /* Searchbar */
 
     #searchImage {
         display: none;
     }
 
-    /* Filter */
-
-    /* Information */
-
     /* ----
     Accomodation and most popular
     ---- */
 
+    .container_accomodation_most_popular {
+        flex-direction: column;
+        margin-bottom: 70px;
+    }
+
     /* Accomodation */
+
+    #container_accommodation {
+        margin-right: 0;
+        margin-bottom: 53px;
+        width: auto;
+    }
 
     /* Most popular */
 
-    .container_accomodation_most_popular {
-        flex-direction: column;
-        margin: 0 72px;
-    }
-
-    #container_accommodation {
-        width: 100%;
-    }
-
     .most_popular {
-        margin-top: 53px;
         width: 100%;
+        height: auto;
+        padding: 34px 40px;
     }
 
     .all_cards_places_of_most_popular {
         display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .card_places_of_most_popular {
+        margin-bottom: 14px;
+        margin-right: auto;
+        width: 252px;
+    }
+    .card_places_of_most_popular:last-child {
+        margin-right: 0;
+    }
+
+    .card_places_of_most_popular img {
+        margin-right: 10px;
+        width: 106px;
+    }
+
+    .card_places_of_most_popular h3 {
+        width: 111px;
+        font-size: 14px;
+    }
+
+    .card_places_of_most_popular p {
+        font-size: 13px;
+    }
+
+    .text_most_popular {
+        margin-top: 16px;
+        margin-right: 0;
+        padding-right: 10px;
     }
 
     /* ----
@@ -560,39 +589,22 @@ form {
     ---- */
 
     #container_activity {
-        margin: 70px 30px 69px 73px;
-    }
-
-    .container_card_of_activity {
-        max-width: 991px;
+        margin: 70px 0 69px 0;
     }
 
     .card_of_activity {
         height: 267px;
-        width: 18%;
+        margin-right: 50px;
     }
 
     .card_of_activity img {
         height: 211px;
+        margin-bottom: 5px;
     }
+}
 
-    /* .card_of_activity h3 {
+@media only screen and (max-width: 850px) {
 
-    } */
-    
-    /*
-    ---------------------
-            FOOTER
-    ---------------------
-    */
-    
-    .footer {
-        margin: 0 70px 0 73px;
-    }
-
-    .footer_components {
-        margin-right: 81px;
-    }
 }
 
 /* ---------------------
@@ -609,7 +621,7 @@ form {
     ---------------------
     */
 
-    header {
+    /* header {
         margin: 2rem 0rem;
     }
 
@@ -655,7 +667,7 @@ form {
 
     header .navbar a:hover {
         color: var(--blue-color)
-    }
+    } */
 
     /* padding-top */
     /* active */
@@ -671,7 +683,7 @@ form {
     Searchbar Filter Information
     --- */
 
-    .container_search_filter_information {
+    /* .container_search_filter_information {
         display: flex;
         flex-direction: column;
         margin: 2rem;
@@ -684,11 +696,11 @@ form {
 
     .container_search_filter_information p {
         font-size: 1.5rem;
-    }
+    } */
 
     /* Searchbar */
 
-    form {
+    /* form {
         display: flex;
         align-items: stretch;
         margin: 3rem 0rem;
@@ -740,11 +752,11 @@ form {
 
     #searchImage {
         display: flex;
-    }
+    } */
 
     /* Filter */
 
-    .filter {
+    /* .filter {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -792,11 +804,11 @@ form {
 
     .filter a p {
         padding-left: 0.5rem;
-    }
+    } */
 
     /* Information */
 
-    .information {
+    /* .information {
         display: flex;
         align-items: center;
     }
@@ -806,20 +818,20 @@ form {
         border-radius: 50%;
         padding: 0.3rem;
         margin-right: 0.75rem;
-    }
+    } */
 
     /* ----
     Accomodation and most popular
     ---- */
 
-    .container_accomodation_most_popular {
+    /* .container_accomodation_most_popular {
         padding: 2rem;
         background-color: var(--grey-color);
-    }
+    } */
 
     /* Most popular */
 
-    .title_most_popular {
+    /* .title_most_popular {
         display: flex;
         justify-content: space-between;
         margin: 0rem 2rem 2rem 0rem;
@@ -830,18 +842,10 @@ form {
         width: auto;
     }
 
-    .card_places_of_most_popular {
-        display: flex;
-        background-color: #fff;
-        border-radius: 20px;
-        border: 0.5rem solid #fff;
-        margin-bottom: 1rem;
-    }
-
     .card_places_of_most_popular img {
         border-radius: 20px 0px 0px 20px;
         margin-right: 1rem;
-    }
+    } */
 
     /* Accomodation */
 
