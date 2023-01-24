@@ -107,14 +107,17 @@ body {
 
 .nav_link li:hover,
 .nav_link li:focus {
-    color: var(--blue-color);
-    border-top: 2px solid blue;
+    border-top: 2px solid var(--blue-color);
     padding-top: 46px;
 }
 
 .header a {
     text-decoration: none;
     color: #000;
+}
+
+.header h3 {
+    font-weight: 400;
 }
 
 
@@ -144,7 +147,7 @@ body {
 /* Searchbar */
 
 .searchbar {
-    margin: 0 0 46px 5px;
+    margin: 0 0 28px 5px;
 }
 
 .searchbar h1 {
@@ -166,7 +169,6 @@ form {
     background-color: var(--grey-color);
     padding: 16px 18px 15px 18px;
     border-radius: 15px 0 0 15px;
-    width: 54px;
     height: 49px;
 }
 
@@ -179,7 +181,7 @@ form {
     border-left: 1px solid var(--grey-color);
     border-bottom: 1px solid var(--grey-color);
     border-right: none;
-    padding: 0 17px;
+    padding: 0 16px;
     font-weight: bold;
     font-size: 18px;
     width: 236px;
@@ -223,6 +225,7 @@ form {
 }
 
 .filter .filter_button {
+    margin-top: 4px;
     margin-left: 42px;
     border: 2px solid var(--darkgrey-color);
     border-radius: 25px;
@@ -333,6 +336,7 @@ form {
     border-radius: 20px 20px 0 0;
     border: 5px solid #fff;
     display: flex;
+    object-fit: cover;
 }
 
 .card_places_of_accomodation .text_accommodation {
@@ -388,7 +392,7 @@ form {
 }
 
 .card_places_of_most_popular:last-child {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .card_places_of_most_popular a {
@@ -458,11 +462,12 @@ form {
 }
 
 .card_of_activity img {
-    height: 78.5%;
+    height: 389px;
     width: 100%;
     margin-bottom: 20px;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 20px 20px 0 0;
     object-fit: cover;
+    display: flex;
 }
 
 .card_of_activity h3 {
@@ -543,6 +548,7 @@ form {
         margin-right: 0;
         margin-bottom: 53px;
         width: auto;
+        height: 100%;
     }
 
     /* Most popular */
@@ -557,12 +563,13 @@ form {
         display: flex;
         flex-wrap: wrap;
     }
-    
+
     .card_places_of_most_popular {
         margin-bottom: 14px;
         margin-right: auto;
         width: 252px;
     }
+
     .card_places_of_most_popular:last-child {
         margin-right: 0;
     }
@@ -592,7 +599,7 @@ form {
     ---- */
 
     #container_activity {
-        margin: 70px 0 69px 0;
+        margin-bottom: 69px;
     }
 
     .card_of_activity {
@@ -602,7 +609,6 @@ form {
 
     .card_of_activity img {
         height: 211px;
-        margin-bottom: 5px;
     }
 }
 
@@ -620,57 +626,35 @@ form {
     ---------------------
     */
 
-    /* header {
-        margin: 2rem 0rem;
+    .header {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-between;
+        align-items: center;
+        margin: 0 0 31px 0;
     }
 
-    header .navbar_logo {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 2rem;
-    }
-
-    header .navbar {
-        display: flex;
-        justify-content: space-around;
+    .navbar {
         width: 100%;
     }
 
-    header .navbar a {
-        text-decoration: none;
-        font-size: 2rem;
-        color: #000;
+    .nav_link {
+        width: inherit;
     }
 
-    .activity {
-        border-bottom: 0.5rem solid var(--grey-color);
+    .nav_link li {
+        margin-bottom: 26px;
         width: 50%;
-        text-align: center;
-        padding: 3rem 0rem
     }
 
-    .activity:hover {
-        border-bottom: 0.5rem solid var(--blue-color);
+    .nav_link li:hover,
+    .nav_link li:focus {
+        border-top: 0;
+        border-bottom: 3px solid var(--blue-color);
+        padding-top: 48px;
+        padding-bottom: 23px;
+        margin-bottom: 0;
     }
-
-    .accomodation {
-        border-bottom: 0.5rem solid var(--grey-color);
-        width: 50%;
-        text-align: center;
-        padding: 3rem 0rem
-    }
-
-    .accomodation:hover {
-        border-bottom: 0.5rem solid var(--blue-color);
-    }
-
-    header .navbar a:hover {
-        color: var(--blue-color)
-    } */
-
-    /* padding-top */
-    /* active */
-    /*  */
 
     /*
     ---------------------
@@ -678,71 +662,31 @@ form {
     ---------------------
     */
 
+    .container_card_of_activity {
+        flex-wrap: wrap;
+    }
+
     /* ---
     Searchbar Filter Information
     --- */
 
-    /* .container_search_filter_information {
-        display: flex;
-        flex-direction: column;
-        margin: 2rem;
+    .container_search_filter_information {
+        margin: 0 20px 39px 20px;
     }
-
-    .container_search_filter_information h1 {
-        margin: 2rem 0rem;
-        font-size: 2.75rem;
-    }
-
-    .container_search_filter_information p {
-        font-size: 1.5rem;
-    } */
 
     /* Searchbar */
 
-    /* form {
-        display: flex;
-        align-items: stretch;
-        margin: 3rem 0rem;
+    .searchbar {
+        margin: 0 0 28px 0;
     }
 
-    .searchbar_icone_location {
-
-        background-color: var(--grey-color);
-        padding: 25px;
-        border-radius: 20px 0 0 20px;
-        height: 6rem;
-
-    }
-
-    .searchbar_icone_location:hover {
-        background-color: var(--darkgrey-color);
+    .searchbar p {
+        margin-bottom: 36px;
     }
 
     .searchbar_text {
-        border-top: 1px solid var(--grey-color);
-        border-left: 1px solid var(--grey-color);
-        border-bottom: 1px solid var(--grey-color);
-        border-right: none;
         width: 100%;
-    }
-
-    .searchbar_text:focus {
-        outline: none;
-    }
-
-    .searchbar_button_search {
-
-        border: none;
-        background-color: var(--blue-color);
-        color: #fff;
-        border-radius: 0 20px 20px 0;
-        padding: 30px 1.75rem;
-        height: 6rem;
-    }
-
-    .searchbar_button_search:hover {
-        background-color: var(--lightblue-color);
-        color: #000;
+        padding: 0 14px;
     }
 
     #searchButton {
@@ -751,106 +695,133 @@ form {
 
     #searchImage {
         display: flex;
-    } */
+    }
+
+    .searchbar_button_search {
+        padding: 16px;
+    }
 
     /* Filter */
 
-    /* .filter {
-        display: flex;
-        flex-direction: column;
+    .filter {
         align-items: flex-start;
-    }
-
-    .filter_container {
-        width: 100%;
-    }
-
-    .filter_button_container {
-        display: flex;
-    }
-
-    .filter_button {
-        margin: 1rem 0rem 1rem 0rem;
-        border: 0.3rem solid var(--darkgrey-color);
-        border-radius: 50px;
-        padding: 1.75rem 1.75rem;
-        display: flex;
-        align-items: center;
-        width: 100%;
-    }
-
-
-    .filter_left {
-        margin-right: 2rem;
-    }
-
-    .filter div:hover,
-    .filter div:focus,
-    .filter div:active {
-        background-color: var(--lightblue-color);
+        flex-direction: column;
+        margin: 0 0 46px 0;
     }
 
     .filter p {
-        font-weight: bold;
+        font-size: 18px;
     }
 
-    .filter a {
-        text-decoration: none;
-        color: #000;
-        display: flex;
-        align-items: center;
+    .filter_container {
+        margin-top: 15px;
     }
 
-    .filter a p {
-        padding-left: 0.5rem;
-    } */
+    .filter .filter_button {
+        margin: 0 0 17px 0;
+        width: 47.75%;
+    }
+
+    .filter_button:nth-child(odd) {
+        margin-right: 4%;
+    }
+
+
+    .filter_button p {
+        font-size: 11px;
+    }
 
     /* Information */
 
-    /* .information {
-        display: flex;
-        align-items: center;
+    .information {
+        margin-left: 0;
     }
-
-    .information img {
-        border: 0.1rem solid var(--darkgrey-color);
-        border-radius: 50%;
-        padding: 0.3rem;
-        margin-right: 0.75rem;
-    } */
 
     /* ----
     Accomodation and most popular
     ---- */
 
-    /* .container_accomodation_most_popular {
-        padding: 2rem;
-        background-color: var(--grey-color);
-    } */
+    .container_accomodation_most_popular {
+        flex-direction: column-reverse;
+    }
 
     /* Most popular */
 
-    /* .title_most_popular {
-        display: flex;
-        justify-content: space-between;
-        margin: 0rem 2rem 2rem 0rem;
+    .most_popular {
+        padding: 21px 15px;
+        border-radius: 0;
     }
 
-    .title_most_popular img {
-        height: 100%;
-        width: auto;
+    .title_most_popular h1 {
+        padding-left: 5px;
+    }
+
+    .all_cards_places_of_most_popular {
+        display: flex;
+        justify-content: center;
+    }
+
+    .card_places_of_most_popular {
+        width: 334px;
+        margin: 0 5px 14px 5px;
     }
 
     .card_places_of_most_popular img {
-        border-radius: 20px 0px 0px 20px;
-        margin-right: 1rem;
-    } */
+        width: 137px;
+        margin-right: 15px;
+    }
+
+    .card_places_of_most_popular h3 {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .card_places_of_most_popular p {
+        font-size: 14px;
+    }
+
+    .all_cards_places_of_most_popular {
+        padding-bottom: 26px;
+    }
 
     /* Accomodation */
+
+    #container_accommodation {
+        background-color: #fff;
+        padding: 26px 20px;
+        margin-bottom: 9px;
+    }
+
+    .card_places_of_accomodation {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .open_more_container {
+        display: none;
+    }
 
     /* ----
     Activity
     ---- */
+
+    #container_activity {
+        margin: 0 20px 80px 20px;
+    }
+
+    #container_activity h1 {
+        width: 50%;
+    }
+
+    .card_of_activity {
+        margin-right: 0;
+        height: 190px;
+    }
+
+    .card_of_activity img {
+        height: 134px;
+        margin-bottom: 20px;
+    }
 
     /*
     ---------------------
@@ -858,4 +829,16 @@ form {
     ---------------------
     */
 
+    .footer {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 0 30px 61px 30px;
+    }
+
+    .footer_components {
+        align-items: center;
+    }
 }
+
+/* padding-top */
+/* active */
