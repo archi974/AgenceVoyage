@@ -294,7 +294,6 @@ form {
     border-radius: 20px;
     background-color: var(--grey-color);
     width: 880px;
-    height: 625px
 }
 
 #container_accommodation h1 {
@@ -366,7 +365,6 @@ form {
     border-radius: 20px;
     padding: 34px 40px 34px 37px;
     width: 420px;
-    height: 625px;
 }
 
 .title_most_popular {
@@ -399,6 +397,7 @@ form {
     display: flex;
     text-decoration: none;
     color: #000;
+    width: 343px;
 }
 
 .card_places_of_most_popular img {
@@ -500,22 +499,20 @@ form {
     margin-bottom: 20px;
 }
 
+.footer_element{
+    margin-bottom: 12px;
+}
+
 .footer_components a {
     text-decoration: none;
     color: #000;
-    margin-bottom: 12px;
 }
+
 
 /* ---------------------
 -------- TABLETTE --------
 ------------------------ */
 @media only screen and (max-width: 991px) {
-
-    /*
-    ---------------------
-            HEADER
-    ---------------------
-    */
 
     body {
         max-width: 880px;
@@ -615,8 +612,6 @@ form {
 /* ---------------------
 -------- MOBILE --------
 ------------------------ */
-
-/* belle présentation 320px mini */
 
 @media only screen and (max-width: 767px) {
 
@@ -759,11 +754,12 @@ form {
     .all_cards_places_of_most_popular {
         display: flex;
         justify-content: center;
+        padding-bottom: 26px;
     }
-
+    
     .card_places_of_most_popular {
-        width: 334px;
-        margin: 0 5px 14px 5px;
+        width: 100%;
+        margin: 0 0 14px 0;
     }
 
     .card_places_of_most_popular img {
@@ -780,8 +776,8 @@ form {
         font-size: 14px;
     }
 
-    .all_cards_places_of_most_popular {
-        padding-bottom: 26px;
+    .text_most_popular {
+        width: 138px;
     }
 
     /* Accomodation */
@@ -811,6 +807,7 @@ form {
 
     #container_activity h1 {
         width: 50%;
+        margin-bottom: 5px;
     }
 
     .card_of_activity {
@@ -834,11 +831,4 @@ form {
         height: auto;
         padding: 0 30px 61px 30px;
     }
-
-    .footer_components {
-        align-items: center;
-    }
 }
-
-/* padding-top */
-/* active */
