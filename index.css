@@ -37,25 +37,36 @@ h3 {
     height: 12px;
 }
 
+.component_stars i:last-child{
+    display: initial;
+}
+
 .star:hover~.star,
 .star:active~.star,
 .star:focus~.star {
-    visibility: hidden;
+    display: none;
 }
 
-.star {
-    position: absolute;
+i.star {
+    color: var(--blue-color);
+    font-size: 12px;
+    width: 12px;
+    height: 12px;
+    display: initial;
 }
 
-.grey_star {
-    visibility: hidden;
-    margin-bottom: 3px;
+i.grey_star {
+    color: var(--grey-color);
+    font-size: 12px;
+    width: 12px;
+    height: 12px;
+    display: none;
 }
 
 .star:hover~.grey_star,
 .star:active~.grey_star,
 .star:focus~.grey_star {
-    visibility: visible;
+    display: initial;
 }
 
 /* ---------------------
@@ -170,6 +181,7 @@ form {
     padding: 16px 18px 15px 18px;
     border-radius: 15px 0 0 15px;
     height: 49px;
+    width: 50px;
 }
 
 .searchbar_icone_location:hover {
@@ -232,6 +244,11 @@ form {
     padding: 10px;
 }
 
+.filter_button i {
+    color: var(--blue-color);
+    font-size: 20px;
+}
+
 .filter .filter_button:hover,
 .filter .filter_button:focus,
 .filter .filter_button:active {
@@ -261,15 +278,16 @@ form {
     margin-left: 9px;
 }
 
-.information img {
+.information i {
+    color: var(--blue-color);
     border: 1px solid var(--darkgrey-color);
     border-radius: 50%;
-    padding: 5px;
+    padding: 7px 10px;
     margin-right: 11px;
-    height: 24px;
+    font-size: 10px;
 }
 
-.information img:hover {
+.information i:hover {
     background-color: var(--lightblue-color);
 }
 
@@ -499,7 +517,7 @@ form {
     margin-bottom: 20px;
 }
 
-.footer_element{
+.footer_element {
     margin-bottom: 12px;
 }
 
@@ -563,7 +581,7 @@ form {
 
     .card_places_of_most_popular {
         margin-bottom: 14px;
-        margin-right: auto;
+        margin-right: 22px;
         width: 252px;
     }
 
@@ -699,9 +717,8 @@ form {
     /* Filter */
 
     .filter {
-        align-items: flex-start;
-        flex-direction: column;
         margin: 0 0 46px 0;
+        display: block;
     }
 
     .filter p {
@@ -714,7 +731,8 @@ form {
 
     .filter .filter_button {
         margin: 0 0 17px 0;
-        width: 47.75%;
+        width: 48%;
+        display: flex;
     }
 
     .filter_button:nth-child(odd) {
@@ -743,7 +761,7 @@ form {
     /* Most popular */
 
     .most_popular {
-        padding: 21px 15px;
+        padding: 21px 20px;
         border-radius: 0;
     }
 
@@ -756,7 +774,7 @@ form {
         justify-content: center;
         padding-bottom: 26px;
     }
-    
+
     .card_places_of_most_popular {
         width: 100%;
         margin: 0 0 14px 0;
