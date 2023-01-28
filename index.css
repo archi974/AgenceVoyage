@@ -41,9 +41,7 @@ h3 {
     display: initial;
 }
 
-.star:hover~.star,
-.star:active~.star,
-.star:focus~.star {
+.star:hover~.star {
     display: none;
 }
 
@@ -63,9 +61,7 @@ i.grey_star {
     display: none;
 }
 
-.star:hover~.grey_star,
-.star:active~.grey_star,
-.star:focus~.grey_star {
+.star:hover~.grey_star{
     display: initial;
 }
 
@@ -624,6 +620,13 @@ form {
 
     .card_of_activity img {
         height: 211px;
+        margin-bottom: 0;
+    }
+
+    .card_of_activity h3 {
+        height: 56px;
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -836,6 +839,10 @@ form {
     .card_of_activity img {
         height: 134px;
         margin-bottom: 20px;
+    }
+
+    .card_of_activity h3 {
+        height: 0;
     }
 
     /*
