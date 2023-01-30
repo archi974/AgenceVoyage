@@ -11,10 +11,11 @@
 
 
 ## Projet : Réalissation d'une page d'accueil d'une agence de voyage en HTML &amp; CSS
-## Status et équipe du projet :
+## Information global :
 
-- terminé
+- Status terminé
 - Projet réaliser seul
+- Lien vers le [GitHub](https://github.com/archi974/AgenceVoyage)
 
 ## Mise en situation :
 
