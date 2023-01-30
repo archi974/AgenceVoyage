@@ -523,6 +523,10 @@ form {
     margin-bottom: 12px;
 }
 
+.footer_element a:hover {
+    text-decoration: revert;
+}
+
 .footer_components a {
     text-decoration: none;
     color: #000;
