@@ -11,7 +11,7 @@
 
 
 ## Projet : Réalissation d'une page d'accueil d'une agence de voyage en HTML &amp; CSS
-## Information global :
+## Informations globales :
 
 - Status terminé
 - Projet réaliser seul
