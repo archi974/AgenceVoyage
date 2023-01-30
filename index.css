@@ -389,6 +389,11 @@ form {
     height: 26px;
 }
 
+.title_most_popular_graphic_icon {
+    color: var(--blue-color);
+    font-size: 18px;
+}
+
 .card_places_of_most_popular {
     display: flex;
     background-color: #FFF;
@@ -453,7 +458,7 @@ form {
 
 .card_of_activity {
     border-radius: 20px;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
     margin-right: 43px;
     margin-top: 19px;
     width: 100%;
@@ -484,7 +489,8 @@ form {
 }
 
 .card_of_activity h3 {
-    margin: 0 19px
+    margin: 0 19px;
+    padding-bottom: 20px;
 }
 
 /*
@@ -624,6 +630,7 @@ form {
     }
 
     .card_of_activity h3 {
+        padding-bottom: 0;
         height: 56px;
         display: flex;
         align-items: center;
@@ -715,6 +722,7 @@ form {
 
     .searchbar_button_search {
         padding: 16px;
+        font-size: 17px;
     }
 
     /* Filter */
