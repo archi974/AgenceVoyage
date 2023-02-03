@@ -414,8 +414,7 @@ form {
 }
 
 .places_of_most_popular_container_image {
-    margin-right: 15px;
-    width: 39.95%;
+    margin-right: 4.375%;
 }
 
 .card_places_of_most_popular img {
@@ -427,14 +426,14 @@ form {
 }
 
 .component_text_and_star_most_popular {
-    margin: 16px 22px 0 0;
+    margin-top: 4.665%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .component_text_most_popular {
-    width: 162px;
+    width: 90%;
 }
 
 .component_text_and_star_most_popular h4 {
@@ -643,6 +642,10 @@ form {
         padding-right: 10px;
     }
 
+    .component_text_most_popular {
+        width: auto;
+    }
+
     /* ----
     Activity
     ---- */
@@ -708,6 +711,7 @@ form {
     .nav_link a:hover,
     .nav_link a:focus {
         border-top: 0;
+        padding-top: 48px;
         border-bottom: 3px solid var(--blue-color);
     }
 
