@@ -229,15 +229,14 @@ form {
 .filter_container {
     list-style-type: none;
     display: flex;
-    flex-wrap: wrap;
 }
 
 .filter .filter_button {
     margin-top: 4px;
     margin-left: 42px;
     border: 2px solid var(--darkgrey-color);
-    border-radius: 25px;
-    padding: 10px;
+    border-radius: 35px;
+    padding: 14px 20px;
 }
 
 .filter_button i {
@@ -420,12 +419,15 @@ form {
     width: 343px;
 }
 
+.places_of_most_popular_container_image {
+    margin-right: 15px;
+}
+
 .card_places_of_most_popular img {
     width: 137px;
     border-radius: 20px 0 0 20px;
     border: 5px solid #fff;
     height: 144px;
-    margin-right: 15px;
     object-fit: cover;
 }
 
@@ -516,7 +518,7 @@ form {
     width: 100%;
 }
 
-.footer_components h2 {
+.footer_components h3 {
     margin-bottom: 20px;
 }
 
@@ -555,6 +557,20 @@ form {
         display: none;
     }
 
+    .filter .title_filter {
+        margin-right: 17px;
+    }
+
+    
+    .filter_container {
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .filter .filter_button {
+        margin-left: 0;
+    }
+
     /* ----
     Accomodation and most popular
     ---- */
@@ -583,26 +599,33 @@ form {
 
     .all_cards_places_of_most_popular {
         display: flex;
-        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     .card_places_of_most_popular {
         margin-bottom: 14px;
-        margin-right: 22px;
-        width: 252px;
+        width: 31.5%;
     }
 
     .card_places_of_most_popular:last-child {
         margin-right: 0;
     }
 
-    .card_places_of_most_popular img {
-        margin-right: 10px;
+    .card_places_of_most_popular a {
+        width: auto;
+    }
+
+    .places_of_most_popular_container_image {
         width: 106px;
+        margin-right: 10px;
+    }
+
+    .card_places_of_most_popular img {
+        width: 100%;
     }
 
     .card_places_of_most_popular h4 {
-        width: 111px;
+        width: 96px;
         font-size: 14px;
     }
 
@@ -690,10 +713,6 @@ form {
     ---------------------
     */
 
-    .container_card_of_activity {
-        flex-wrap: wrap;
-    }
-
     /* ---
     Searchbar Filter Information
     --- */
@@ -742,6 +761,7 @@ form {
     }
 
     .filter_container {
+        flex-wrap: wrap;
         margin-top: 15px;
     }
 
@@ -749,6 +769,7 @@ form {
         margin: 0 0 17px 0;
         width: 48%;
         display: flex;
+        padding: 14px 13px;
     }
 
     .filter_button:nth-child(odd) {
@@ -777,7 +798,7 @@ form {
     /* Most popular */
 
     .most_popular {
-        padding: 21px 20px;
+        padding: 28px 20px;
         border-radius: 0;
     }
 
@@ -787,18 +808,24 @@ form {
 
     .all_cards_places_of_most_popular {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-        padding-bottom: 26px;
+        padding-bottom: 19px;
     }
 
     .card_places_of_most_popular {
         width: 100%;
-        margin: 0 0 14px 0;
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    .places_of_most_popular_container_image {
+        margin-right: 15px;
+        width: 77%;
     }
 
     .card_places_of_most_popular img {
-        width: 137px;
-        margin-right: 15px;
+        width: 100%;
     }
 
     .card_places_of_most_popular h4 {
@@ -811,7 +838,7 @@ form {
     }
 
     .text_most_popular {
-        width: 138px;
+        width: 100%;
     }
 
     /* Accomodation */
@@ -834,6 +861,10 @@ form {
     /* ----
     Activity
     ---- */
+
+    .container_card_of_activity {
+        flex-wrap: wrap;
+    }
 
     #container_activity {
         margin: 0 20px 80px 20px;
