@@ -101,21 +101,22 @@ body {
     list-style-type: none;
 }
 
-.nav_link li {
+.nav_link a {
     padding-top: 48px;
     width: 162px;
     display: flex;
     justify-content: center;
 }
 
-.nav_link li:last-child {
+.nav_link a:last-child {
     margin-right: 0;
 }
 
-.nav_link li:hover,
-.nav_link li:focus {
+.nav_link a:hover,
+.nav_link a:focus {
     border-top: 2px solid var(--blue-color);
     padding-top: 46px;
+    color: var(--blue-color);
 }
 
 .header a {
@@ -125,12 +126,6 @@ body {
 
 .header h4 {
     font-weight: 400;
-}
-
-
-.navbar a:hover,
-.navbar a:focus {
-    color: var(--blue-color);
 }
 
 /*
@@ -416,11 +411,11 @@ form {
     display: flex;
     text-decoration: none;
     color: #000;
-    width: 343px;
 }
 
 .places_of_most_popular_container_image {
     margin-right: 15px;
+    width: 39.95%;
 }
 
 .card_places_of_most_popular img {
@@ -431,18 +426,22 @@ form {
     object-fit: cover;
 }
 
-.text_most_popular {
+.component_text_and_star_most_popular {
     margin: 16px 22px 0 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.text_most_popular h4 {
+.component_text_most_popular {
+    width: 162px;
+}
+
+.component_text_and_star_most_popular h4 {
     margin-bottom: 7px;
 }
 
-.text_most_popular .component_stars {
+.component_text_and_star_most_popular .component_stars {
     margin-bottom: 12px;
 }
 
@@ -461,7 +460,6 @@ form {
 
 .card_of_activity {
     border-radius: 20px;
-    /* padding-bottom: 20px; */
     margin-right: 43px;
     margin-top: 19px;
     width: 100%;
@@ -551,11 +549,17 @@ form {
     ---------------------
     */
 
+    /* ----
+    Searchbar and Filter
+    ---- */
+
     /* Searchbar */
 
     #searchImage {
         display: none;
     }
+
+    /* Filter */
 
     .filter .title_filter {
         margin-right: 17px;
@@ -633,7 +637,7 @@ form {
         font-size: 13px;
     }
 
-    .text_most_popular {
+    .component_text_and_star_most_popular {
         margin-top: 16px;
         margin-right: 0;
         padding-right: 10px;
@@ -693,18 +697,18 @@ form {
         width: inherit;
     }
 
-    .nav_link li {
-        margin-bottom: 26px;
+    .nav_link a {
         width: 50%;
-    }
-
-    .nav_link li:hover,
-    .nav_link li:focus {
-        border-top: 0;
-        border-bottom: 3px solid var(--blue-color);
         padding-top: 48px;
         padding-bottom: 23px;
         margin-bottom: 0;
+        border-bottom: 3px solid var(--grey-color);
+    }
+    
+    .nav_link a:hover,
+    .nav_link a:focus {
+        border-top: 0;
+        border-bottom: 3px solid var(--blue-color);
     }
 
     /*
@@ -837,7 +841,7 @@ form {
         font-size: 14px;
     }
 
-    .text_most_popular {
+    .component_text_and_star_most_popular {
         width: 100%;
     }
 
