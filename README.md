@@ -102,7 +102,6 @@ Vous êtes chargé d'intégrer l'interface du site avec du code HTML et CSS. Pou
 - Installer l'extension "Live Server"
 - Après récupération du code et ouverture avec Visual Studio Code, lancer "Go Live" en bas à droite
 
-Une liste des technologies utilisées et, le cas échéant, des liens vers d’autres informations sur ces technologies.
 ## Bugs connus et corrections éventuelles apportées :
 
   - Bug d'image en Css qui donne un espace en bas, l'utilisation du `Display: flex` sur l'image règle le problème.
